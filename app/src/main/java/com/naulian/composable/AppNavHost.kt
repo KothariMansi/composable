@@ -18,21 +18,19 @@ import com.naulian.composable.core.LocalNavController
 import com.naulian.composable.core.Screen
 import com.naulian.composable.home.HomeScreen
 import com.naulian.composable.icc.InteractiveCCScreen
-import com.naulian.composable.icc.calenderTopBar.CalenderTopBarScreen
-import com.naulian.composable.icc.cardCrousel.BetterCarouselScreen
-import com.naulian.composable.icc.cylindricalButton.CylindricalButtonsScreen
+import com.naulian.composable.icc.better_carousel.BetterCarouselScreen
+import com.naulian.composable.icc.calender_topbar.CalenderTopBarScreen
 import com.naulian.composable.icc.heartButton.HeartButtonScreen
-import com.naulian.composable.icc.parallaxCards.ParallaxCardStackScreen
 import com.naulian.composable.icc.rating.RatingStarsScreen
 import com.naulian.composable.icc.step_progress.ProgressScreen
 import com.naulian.composable.scc.StaticCCScreen
-import com.naulian.composable.scc.cafeReceipt.CafeReceiptScreen
+import com.naulian.composable.scc.cafe_receipt.CafeReceiptScreen
 import com.naulian.composable.scc.cornered_box.CorneredBoxScreen
-import com.naulian.composable.scc.depthCards.DepthCardScreen
+import com.naulian.composable.scc.depth_card.DepthCardScreen
 import com.naulian.composable.scc.glass.GlassCardScreen
 import com.naulian.composable.scc.grid_background.GridBackgroundScreen
 import com.naulian.composable.scc.neumorphic.NeumorphicScreen
-import com.naulian.composable.scc.shapes.MovieTicketScreen
+import com.naulian.composable.scc.ticket.MovieTicketScreen
 
 @Composable
 fun AppNavHost() {
@@ -100,10 +98,6 @@ fun AppNavHost() {
                 CafeReceiptScreen()
             }
 
-            composable<Screen.HeartButton> {
-                HeartButtonScreen()
-            }
-
 
             // Interactive Components
             composable<Screen.InteractiveCC> {
@@ -111,9 +105,6 @@ fun AppNavHost() {
             }
             composable<Screen.RatingStars> {
                 RatingStarsScreen()
-            }
-            composable<Screen.ParallaxCardStack> {
-                ParallaxCardStackScreen()
             }
             composable<Screen.BetterCarousel> {
                 BetterCarouselScreen()
@@ -127,8 +118,8 @@ fun AppNavHost() {
             composable<Screen.CalenderTopBar> {
                 CalenderTopBarScreen()
             }
-            composable<Screen.CylindricalButtons> {
-                CylindricalButtonsScreen()
+            composable<Screen.HeartButton> {
+                HeartButtonScreen()
             }
 
             // Animated Components
